@@ -20,7 +20,7 @@ public class MyAdapter extends BaseAdapter {
         this.detailStrings = detailStrings;
     }
 
-    @Override
+    @Override //`นับจำนวนข้อมูลในดาต้าเบส
     public int getCount() {
         return ints.length;
     }
@@ -36,7 +36,7 @@ public class MyAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
+    public View getView(int i, View view, ViewGroup viewGroup) { //นำข้อมูลมาแสดงผลข้อมูลบนแอพ
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view1 = layoutInflater.inflate(R.layout.my_listview,viewGroup,false);
 

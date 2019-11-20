@@ -35,7 +35,7 @@ public class Detail extends AppCompatActivity {
                 finish();
             }
         });
-    
+
 
     }// end method
 
